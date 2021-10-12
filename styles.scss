@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.322)), url("https://i.imgur.com/59NSmVP.jpg");
+    height: 500px;
+    animation: infiniteScrollBg 35s linear infinite;
+    h1{
+        color: white;
+        text-align: center;
+        padding: 60px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 500;
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    }
+    .container{
+        text-align: center;
+        img{
+          text-align: center;
+          width: 300px;
+          border-radius: 200px;
+        }
+        .dog__image{
+            border-radius: 50px;
+            position: relative;
+          }
+    }
+
+}
+@keyframes infiniteScrollBg {
+  0% {
+    background-position: 50% 0;
+  }
+  100%{
+    background-position: 50% (-500px * 2);
+  }
+}
