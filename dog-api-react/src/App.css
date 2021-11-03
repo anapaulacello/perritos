@@ -1,0 +1,19 @@
+body{
+    background-image:url("https://i.imgur.com/59NSmVP.jpg");
+    animation: infiniteScrollBg 35s linear infinite;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes infiniteScrollBg {
+    0% {
+      background-position: 50% 0;
+    }
+    100%{
+      background-position: 50% (-500px * 2);
+    }
+  }
