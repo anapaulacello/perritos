@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Fetch } from './components';
+import { Fetch,Random} from './components';
 
 function App() {
   return (
     <div className="App">
         <h1>Dog Api</h1>
         <Fetch></Fetch>
+        <Random></Random>
     </div>
   );
 }

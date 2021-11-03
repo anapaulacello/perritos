@@ -1,3 +1,3 @@
 import Fetch from "./Fetch";
-
-export{Fetch}
+import Random from "./Random"
+export{Fetch, Random}

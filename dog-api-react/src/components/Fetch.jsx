@@ -4,7 +4,6 @@ import './Fetch.css';
 
 const Fetch = () => {
     const [dogName, setDogName]=useState("");
-    const [dogChosen, setDogChosen] = useState(false);
     const [images, setImages]=useState([]);
 
     const baseURL="https://dog.ceo/api";
@@ -15,7 +14,6 @@ const Fetch = () => {
             (res)=>{
                 console.log(res.data.message);
                 setImages([res.data.message[0]]);
-                setDogChosen(true);
             }
         )
     }
