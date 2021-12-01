@@ -1,3 +1,5 @@
 import Fetch from "./Fetch";
 import Random from "./Random"
-export{Fetch, Random}
+import UseStateComponent from "./UseStateComponent"
+import UseEffectComponent  from "./UseEffectComponent";
+export{Fetch, Random, UseStateComponent,UseEffectComponent}

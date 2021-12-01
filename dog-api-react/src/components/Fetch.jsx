@@ -20,14 +20,16 @@ const Fetch = () => {
 
       return (
         <div className="dog_img">
-            <input type="text" onChange={(event) => {
+        <div className="search-container">
+            <input className="dog_input" type="text" onChange={(event) => {
                 setDogName(event.target.value);
             }}
             />
-        <button onClick={serchDog}>Search Dog</button>
-        <div>
-            <img src={images}></img>
+            <button onClick={serchDog}>Search Dog</button>
         </div>
+            <div>
+                <img src={images}></img>
+            </div>
         </div>
     )
 }
